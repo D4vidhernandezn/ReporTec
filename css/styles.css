@@ -36,7 +36,6 @@ font-size: 1.5em;
 color: #fff !important;
 text-align: center !important;
 padding: 0.5rem !important;
-font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 
@@ -97,5 +96,55 @@ transform: scale(1.1, 1.1);
 @media (max-width:600px){
     #articles span{
         width: 90%;
+    }
+}
+
+
+/*Responsive w 360  h 740*/
+
+@media (max-width:360px){
+    #header #headline{
+    height: 35px;}
+    }
+
+    /*Reportec*/
+    @media (max-width:360px){ 
+        #header #headline h1{
+        text-align: center;
+        font-size: 1.5em;
+    }}
+    /*Que daño desea reportar*/
+    
+    @media (max-width:360px){  
+        #header .titulo h4{
+        font-size: 1.25rem;
+    }}
+
+
+@media (max-width:360px){
+    #articles span{
+        width: 80%;
+        height: 65px;
+        margin: 5px;
+        background: #f7f7f7;
+        box-sizing: border-box; 
+        font-size: 50px;
+        box-shadow: 0px 0px 3px #d8d7d7 inset;
+        border-radius: 3px;
+    }
+
+
+    #articles span img{
+            margin-top: 10px;
+            width: 30%;
+            height: 70%;
+            float: left;
+            }
+        
+#articles span a{
+float: left;
+text-align: left;
+color: #1B396A ;
+font-size: 0.9rem;        
     }
 }
