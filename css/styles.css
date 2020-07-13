@@ -41,7 +41,6 @@ padding: 0.5rem !important;
 
 
 /*<!--Inico Caja de opciones -->*/
-
 #articles{
     width: 100%;
     height: auto;
@@ -77,16 +76,14 @@ text-decoration: none;
 text-align: center;
 font-size: 0.5em;
 color: #1B396A ;
-/*#1b396a icon color*/
+
 }
 #articles span a:hover{
-    
     color: #37bcf9;
 transform: scale(1.1, 1.1);
 }
 
-
-/*Responsive 1200*/
+/*Responsive en Desktop 1200*/
 @media (max-width:1200px){
     #articles span{
         width: 40%;
@@ -99,9 +96,7 @@ transform: scale(1.1, 1.1);
     }
 }
 
-
-/*Responsive w 360  h 740*/
-
+/*Responsive Diseño caja de opciones de los tipos de reporte con Responsive en Móvil w 360  h 740*/
 @media (max-width:360px){
     #header #headline{
     height: 35px;}
@@ -120,7 +115,6 @@ transform: scale(1.1, 1.1);
         font-size: 1.25rem;
     }}
 
-
 @media (max-width:360px){
     #articles span{
         width: 80%;
@@ -132,7 +126,6 @@ transform: scale(1.1, 1.1);
         box-shadow: 0px 0px 3px #d8d7d7 inset;
         border-radius: 3px;
     }
-
 
     #articles span img{
             margin-top: 10px;
@@ -147,4 +140,49 @@ text-align: left;
 color: #1B396A ;
 font-size: 0.9rem;        
     }
+}
+
+
+/*REPORTES*/
+#date{
+    color: #212529;
+    float: right;
+}
+
+#formulario{
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    padding: 30px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 0px 3px #d8d7d7 inset;
+}
+
+#formulario .titleDescrip{
+width: 70% ;
+text-align: center;
+margin-top: 20px;
+}
+
+#formulario textarea{
+    width: 70%;
+    height: auto;
+}
+
+#formulario label{
+color: #212529;
+font-size: 700;
+}
+
+#formulario #addFoto{
+    margin: 10px;
+    margin-left: 0px;
+}
+
+#formulario #send{
+    background-color: #1b396a;
+    color: white;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 0.25rem;
 }
