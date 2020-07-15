@@ -128,7 +128,7 @@ transform: scale(1.1, 1.1);
     }
 
     #articles span img{
-            margin-top: 10px;
+            margin-top: 8px;
             width: 30%;
             height: 70%;
             float: left;
@@ -138,7 +138,8 @@ transform: scale(1.1, 1.1);
 float: left;
 text-align: left;
 color: #1B396A ;
-font-size: 0.9rem;        
+font-size: .9rem;        
+margin-top: 5px;
     }
 }
 
@@ -158,10 +159,13 @@ font-size: 0.9rem;
     box-shadow: 0px 0px 3px #d8d7d7 inset;
 }
 
+#formulario #seleccionar{
+margin: 20px 0px 5px 0px;
+}
+
 #formulario .titleDescrip{
 width: 70% ;
 text-align: center;
-margin-top: 20px;
 }
 
 #formulario textarea{
@@ -174,6 +178,10 @@ color: #212529;
 font-size: 700;
 }
 
+#formulario #problem{
+    float: left;
+    margin: 0px 20px 0px 0px;
+}
 #formulario #addFoto{
     margin: 10px;
     margin-left: 0px;
@@ -186,3 +194,51 @@ font-size: 700;
     padding: 5px 10px;
     border-radius: 0.25rem;
 }
+
+/*Responsive en Desktop 865*/
+@media (max-width:865px){
+ 
+#formulario form .inputLugar{
+display: block;
+margin-bottom: 17px;
+}
+
+  #formulario form #problem .inputProblem{
+display: block;
+    }
+
+   #formulario form #seleccionar select{
+    display: block;
+    
+    } 
+  }
+
+  /* Responsive 700px*/
+  @media (max-width:700px){
+#formulario form textarea{
+    width: 100%;
+}
+#formulario .titleDescrip{
+    width: 10% ;
+    }
+  }
+ 
+  @media (max-width: 445px){
+      *{
+          font-size: .9rem;
+      }
+      
+    #date{
+        font-size: .7rem;
+        color: #212529;
+        float: right;
+        margin-left: 80px;
+        margin-top: 0px;
+        padding: 0px 0px 0px 80%;
+    }
+
+    #formulario form #problem .inputProblem{
+        margin-bottom: 20px;
+            }
+
+  }

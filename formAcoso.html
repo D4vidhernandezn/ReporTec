@@ -34,7 +34,7 @@
     </div>
     <header id="header">
       <div id="headline">
-        <h1>Reportec</h1>
+        <h1> Reportec</h1>
       </div>
       <div class="titulo"><h4>Reportar Acoso</h4></div>
       <!--<div class="salir">Salir</div> -->
@@ -50,18 +50,21 @@
       </div>
 
       <form method="get" action="">
-        <label for="" class="align-middle text-center font-weight-bold">Lugar:</label>
-        <input type="text" name="" id="" />
+        <label for="" class="align-middle text-center font-weight-bold lugar">Lugar:</label>
+        <input type="text" name="" id="" class="inputLugar"/>
 
-        <label for="" class="align-middle text-center font-weight-bold">Problema:</label>
-        <input type="text" name="" id="" />
+        <div id="problem">
+        <label for="" class="align-middle text-center font-weight-bold problema">Problema:</label>
+        <input type="text" name="" id="" class="inputProblem" />
+        </div>
 
-        <label for="" class="align-middle text-center font-weight-bold">Nivel de riesgo:</label>
-        <select name="" id="">
+        <div id="seleccionar"> 
+        <label for="" class="align-middle text-center font-weight-bold riesgo">Nivel de riesgo:</label>
+        <select name="" id="" class="nivelOption">
           <option value="">Tolerable</option>
           <option value="">Moderado</option>
           <option value="">Emergencia</option>
-        </select>
+        </select></div>
         <br/>
 
         <label class="align-middle text-center font-weight-bold titleDescrip" for="">Descripción:</label><br/>
