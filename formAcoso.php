@@ -15,7 +15,7 @@
       crossorigin="anonymous"
     />
     
-    <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css">
 
     <!-- =============================== = Font Awesome = ================================ -->
     <link
@@ -30,7 +30,7 @@
   <body>
     <!--Inicio de header-->
     <div id="bannerSIE">
-      <img src="img/bannerSIE.jpg" alt="Banner sie" />
+      <img src="img/bannerSIE.jpg" alt="Banner sie"/>
     </div>
     <header id="header">
       <div id="headline">
@@ -45,36 +45,37 @@
 
     <div id="formulario">
       <!--Fecha-->
-      <div id="date" class="align-middle text-center font-weight-bold">
-        <script src="js/date.js"></script>
+      <div id="date" name="fecha" class="align-middle text-center font-weight-bold">
+        <script src="js/date.js" ></script>
       </div>
 
-      <form method="get" action="">
+      <form action="" method="POST" enctype="multipart/form-data">
         <label for="" class="align-middle text-center font-weight-bold lugar">Lugar:</label>
-        <input type="text" name="" id="" class="inputLugar"/>
+        <input type="text" name="lugar" id="" class="inputLugar" required />
 
         <div id="problem">
         <label for="" class="align-middle text-center font-weight-bold problema">Problema:</label>
-        <input type="text" name="" id="" class="inputProblem" />
+        <input type="text" name="problema" id="" class="inputProblem" required />
         </div>
 
         <div id="seleccionar"> 
         <label for="" class="align-middle text-center font-weight-bold riesgo">Nivel de riesgo:</label>
-        <select name="" id="" class="nivelOption">
-          <option value="">Tolerable</option>
-          <option value="">Moderado</option>
-          <option value="">Emergencia</option>
+        <select name="riesgo" id="" class="nivelOption">
+          <option value="Tolerable">Tolerable</option>
+          <option value="Moderado">Moderado</option>
+          <option value="Emergencia">Emergencia</option>
         </select></div>
         <br/>
 
         <label class="align-middle text-center font-weight-bold titleDescrip" for="">Descripción:</label><br/>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-      </form>
-
-      <form action="" method="post" enctype="multipart/form-data">
-        <p id="addFoto">Foto <input type="file" name="file" id="" value="AddFoto" /></p>
-        <p><input type="submit" value="Enviar" id="send" class="btn" /></p>
+        <textarea name="descripcion" id="" cols="30" rows="10"required ></textarea>
+  
+        <p id="addFoto">Foto <input type="file" name="file" id="" value="foto" /></p>
+        <p><input type="submit" name="register" value="Enviar" id="send" class="btn" /></p>
      </form>  
+     <?php 
+     include("registrar.php");
+     ?>
       </div>
     <!--Fin del Formulario-->
   </body>
