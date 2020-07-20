@@ -1,7 +1,5 @@
 <?php
-
 include("con_bd.php");
-
 if(isset($_POST['register']) && (isset($_FILES['img']))){
 
     //if (strlen($_POST['fecha']) >= 1 &&
@@ -20,7 +18,7 @@ if(isset($_POST['register']) && (isset($_FILES['img']))){
        //$file = addslashes(file_get_contents($_FILES['file']['tmp_name']));
        $nombreImg=$_FILES['img']['name'];
        $ruta=$_FILES['img']['tmp_name'];
-       $destino="img/".$nombreImg;
+       $destino="Fotos_enviadas_a_reportec/".$nombreImg;
 
 
     $consulta = "INSERT INTO reportes_acoso(lugar, problema, riesgo, descripcion,nombre,ruta) VALUES ('$lugar','$problema','$riesgo','$descripcion','$nombreImg','$destino')";
