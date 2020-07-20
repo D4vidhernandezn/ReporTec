@@ -243,3 +243,20 @@ display: block;
             }
 
   }
+
+/*Historial*/
+  #historial {
+    width: 30%;
+    height: 300px;
+    margin: 20px;
+    background: #f7f7f7;
+    box-sizing: border-box; 
+    font-size: 1em;
+    box-shadow: 0px 0px 3px #d8d7d7 inset;
+    border-radius: 3px;
+    padding: 10px;
+  }
+  #historial img{
+      display: block;
+      width: 100%;
+  }

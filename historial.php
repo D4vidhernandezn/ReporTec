@@ -42,13 +42,16 @@ $res=mysqli_query($conex,$sql);
 <?php
 while ($data=mysqli_fetch_array($res))
 {
-echo $data['lugar'];
-echo $data['problema'];
-echo $data['riesgo'];
-echo '<img src="'.$data['ruta'].'" width="150px" height="150px">';
-echo '<br>';
+echo '<p>Lugar : ' .$data['lugar'].'</p>';
+echo '<p>Problema : ' .$data['problema'].'</p>';
+echo '<p>Riesgo : ' .$data['riesgo'].'</p>';
+echo '<img id="fotoEvidencia" src="'.$data['ruta'].'"title="Foto Evidencia" width="150px" height="150px">';
 }
-?><br>
+?>
+
+
+
+
 </div>
 <!--Fin Caja de opciones -->
 </body>
