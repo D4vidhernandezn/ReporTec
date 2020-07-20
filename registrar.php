@@ -18,9 +18,9 @@ if(isset($_POST['register']) && (isset($_FILES['img']))){
        //$file = addslashes(file_get_contents($_FILES['file']['tmp_name']));
        $nombreImg=$_FILES['img']['name'];
        $ruta=$_FILES['img']['tmp_name'];
-       $destino="Fotos_enviadas_a_reportec/".$nombreImg;
+       $destino="FotosReportec/".$nombreImg;
 
-
+       if(copy($ruta,$destino)){
     $consulta = "INSERT INTO reportes_acoso(lugar, problema, riesgo, descripcion,nombre,ruta) VALUES ('$lugar','$problema','$riesgo','$descripcion','$nombreImg','$destino')";
 
     $resultado = mysqli_query($conex,$consulta);
@@ -30,7 +30,7 @@ if(isset($_POST['register']) && (isset($_FILES['img']))){
                 <h3>Reporte Enviado</h3>
             
                 <?php
-    } else {
+    }} else {
         ?>
         <h3>Error al enviar</h3>
         <?php
