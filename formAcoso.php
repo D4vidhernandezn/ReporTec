@@ -69,8 +69,9 @@
 
         <label class="align-middle text-center font-weight-bold titleDescrip" for="">Descripción:</label><br/>
         <textarea name="descripcion" id="" cols="30" rows="10"required ></textarea>
-  
-        <p id="addFoto">Foto <input type="file" name="file" id="" value="foto" /></p>
+
+        <p id="addFoto">Foto <input type="file" name="img" id="" value="foto" /></p>
+        
         <p><input type="submit" name="register" value="Enviar" id="send" class="btn" /></p>
      </form>  
      <?php 

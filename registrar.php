@@ -2,7 +2,8 @@
 
 include("con_bd.php");
 
-if(isset($_POST['register'])){
+if(isset($_POST['register']) && (isset($_FILES['img']))){
+
     //if (strlen($_POST['fecha']) >= 1 &&
    if(strlen($_POST['lugar']) >= 1 &&
     strlen($_POST['problema']) >= 1 &&
@@ -16,12 +17,17 @@ if(isset($_POST['register'])){
         $descripcion = trim($_POST['descripcion']);
        // $file = trim($_POST['file']);
     
-       $file = addslashes(file_get_contents($_FILES['file']['tmp_name']));
+       //$file = addslashes(file_get_contents($_FILES['file']['tmp_name']));
+       $nombreImg=$_FILES['img']['name'];
+       $ruta=$_FILES['img']['tmp_name'];
+       $destino="img/".$nombreImg;
 
-    $consulta = "INSERT INTO reportesacoso(lugar, problema, riesgo, descripcion,file) VALUES ('$lugar','$problema','$riesgo','$descripcion','file')";
+
+    $consulta = "INSERT INTO reportes_acoso(lugar, problema, riesgo, descripcion,nombre,ruta) VALUES ('$lugar','$problema','$riesgo','$descripcion','$nombreImg','$destino')";
+
     $resultado = mysqli_query($conex,$consulta);
     if ($resultado){
-        include("upload.php");
+    //    include("upload.php");
         ?>
                 <h3>Reporte Enviado</h3>
             
