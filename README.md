@@ -9,3 +9,6 @@
 
 #### Móvil
 ![Screenshot](https://github.com/D4vidhernandezn/ReporTec/blob/master/img/Menu.jpg)
+
+#### Historial
+![Screenshot](https://github.com/D4vidhernandezn/ReporTec/blob/master/img/Historial%20reportec.png)
